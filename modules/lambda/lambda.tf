@@ -39,12 +39,6 @@ resource "aws_lambda_function" "test_failure_lambda" {
   source_code_hash = data.archive_file.python_lambda_package.output_base64sha256
 
   runtime = "python3.9"
-
-  #   environment {
-  #     variables = {
-  #       foo = "bar"
-  #     }
-  #   }
 }
 
 # outputs
